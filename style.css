@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.navbar {
+    background: rgb(75,165,250);
+    background: linear-gradient(90deg, rgba(75,165,250,1) 0%, rgba(187,56,224,1) 100%);
+}
+
+.jumbotron {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: -30px;
+    background: rgb(75,165,250);
+    background: linear-gradient(90deg, rgba(75,165,250,1) 0%, rgba(187,56,224,1) 100%);
+}
+
+.jumbotron small {
+    color: #fff;
+}
+
+.about {
+    margin-top: -80px;
+    padding-bottom: -220px;
+}
+
+.picture {
+    margin-top: -65px;
+    color: white;
+    background: rgb(75,165,250);
+    background: linear-gradient(90deg, rgba(187,56,224,1) 0%, rgba(75,165,250,1) 100%);
+}
+
+.picture .card-text {
+    color: black;
+}
+
+.footer {
+    margin-top: -20px;
+    background: rgb(75,165,250);
+    background: linear-gradient(90deg, rgba(187,56,224,1) 0%, rgba(75,165,250,1) 100%);
+}
+
+.asa {
+    color: linear-gradient(90deg, rgba(187,56,224,1) 0%, rgba(75,165,250,1) 100%);
+}
