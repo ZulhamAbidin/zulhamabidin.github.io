@@ -7,10 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>ZULHAM ABIDIN | PROFILE</title>
 </head>
-<body class="bg-slate-200">
+<body>
      <nav class="bg-gradient-to-r from-indigo-500 to-pink-500 text-white pb-0 mb-0">
       <div class="max-w-6xl mx-auto">
         <div class="flex justify-between">
+
+
+          
 
           <div>
             <a href="" class="flex items-center justify-center">
@@ -50,6 +53,13 @@
         <small class="text-center font-semibold">Student</small>
     </div>
 
+     
+      <div class="m-2 h-44 bg-red-600 rounded-lg flex items-center text-center text-white font-semibold">
+          <h1 class="text-lg">WEBSITE INI MASIH DALAM TAHAP PENGEMBANGAN</h1>
+      </div>
+
+
+
     <svg width="100%" height="100%" class="" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
           .path-0{
             animation:pathAnim-0 4s;
@@ -74,9 +84,7 @@
             }
           }</style><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#6366f1ff"></stop><stop offset="95%" stop-color="#ec4899ff"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,200 0,200 C 56.986008836524306,165.1327319587629 113.97201767304861,130.26546391752578 178,143 C 242.0279823269514,155.73453608247422 313.09793814432993,216.07087628865978 373,235 C 432.90206185567007,253.92912371134022 481.63622974963187,231.45103092783506 533,213 C 584.3637702503681,194.54896907216494 638.3571428571429,180.125 711,172 C 783.6428571428571,163.875 874.9351988217967,162.04896907216494 929,175 C 983.0648011782033,187.95103092783506 999.9020618556701,215.6791237113402 1058,227 C 1116.0979381443299,238.3208762886598 1215.456553755523,233.23453608247422 1286,226 C 1356.543446244477,218.76546391752578 1398.2717231222387,209.3827319587629 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
 
-      <div class="m-2 h-44 bg-red-600 rounded-lg flex text-white font-semibold">
-          <h1 class="p-6 text-lg text-center mt-6">WEBSITE INI MASIH DALAM TAHAP PENGEMBANGAN</h1>
-      </div>
+
 
 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4 bg-gradient-to-r from-indigo-500 to-pink-500 text-white">
@@ -135,9 +143,55 @@
         <div class="col-span-2">
             <img class="rounded-lg" src="source/img/11.jpg" alt="">
         </div>
+    </div>
 
 
-       
+
+<form class="max-w-md mb-24 grid grid-cols-1 gap-4 mx-10 mt-6">
+
+  <label class="col-span-4">
+    <span class="text-sm">Nama</span>
+    <!-- Using form state modifers, the classes can be identical for every input -->
+    <input type="text" placeholder="Masukkan nama anda" value="" class="text-black w-full px-3 mt-1  py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+      focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+      disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+      invalid:border-pink-500 invalid:text-pink-600
+      focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+    "/>
+  </label>
+
+
+  <label class="col-span-4">
+    <span class="text-sm">Pesan Dan Kesan</span>
+    <!-- Using form state modifers, the classes can be identical for every input -->
+    <textarea type="text" value="" class="text-black mt-1 px-3 w-full py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+      focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+      disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+      invalid:border-pink-500 invalid:text-pink-600
+      focus:invalid:border-pink-500 focus:invalid:ring-pink-500">Masukkan Pesan Dan Kesan</textarea>
+  </label>
+
+ 
+       <div id="11" class="hidden flex mobile-menu-alert m-4 col-span-4 bg-sky-500 alert text-white uppercase font-bold rounded-lg h-14 items-center justify-center">
+       <p >data berhasil dikirim</p>
+     </div>
+ </div>
+
+  <a href="#11" class="text-center mobile-menu-button-alert bg-violet-700 col-span-4 text-white hover:bg-violet-600 w-full p-2 my-2 rounded-md mt-4"> kirim </a>
+  <!-- ... -->
+</form>
+
+
+    <script>
+      const  btnalert = document.querySelector(".mobile-menu-button-alert");
+      const  menualert = document.querySelector(".mobile-menu-alert");
+
+
+      btnalert.addEventListener("click", () => {
+        menualert.classList.toggle("hidden");
+      });
+    </script>
+
 
     <script>
       const  btn = document.querySelector("button.mobile-menu-button");
