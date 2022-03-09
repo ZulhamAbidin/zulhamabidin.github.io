@@ -46,7 +46,7 @@
       </div>
     </nav>
 
-    <svg width="100%" height="100%" class="-mt-1" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
+    <svg width="100%" height="100%" class="-mt-1 md:hidden" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
           .path-0{
             animation:pathAnim-0 4s;
             animation-timing-function: linear;
@@ -76,7 +76,7 @@
         <small class="text-center font-semibold">Student</small>
     </div>
 
-   <svg width="100%" height="100%" class="-mb-16" id="svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
+   <svg width="100%" height="100%" class="-mb-14 md:-mb-20 lg:-mb-28" id="svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
           .path-0{
             animation:pathAnim-0 4s;
             animation-timing-function: linear;
@@ -99,14 +99,16 @@
               d: path("M 0,600 C 0,600 0,300 0,300 C 51.635498870732036,292.6227296020042 103.27099774146407,285.2454592040084 135,285 C 166.72900225853593,284.7545407959916 178.5515079048758,291.64089278597055 219,305 C 259.4484920951242,318.35910721402945 328.5229706390328,338.1909696521096 368,347 C 407.4770293609672,355.8090303478904 417.35660953899304,353.5952286055913 458,368 C 498.64339046100696,382.4047713944087 570.0505912049953,413.4281159255252 615,403 C 659.9494087950047,392.5718840744748 678.4410256410256,340.69230769230774 718,348 C 757.5589743589744,355.30769230769226 818.1853062309023,421.802653305244 857,402 C 895.8146937690977,382.197346694756 912.817749435366,276.0970790867164 949,273 C 985.182250564634,269.9029209132836 1040.5436960276338,369.80903034789037 1080,365 C 1119.4563039723662,360.19096965210963 1143.0074664540987,250.66679952172186 1183,223 C 1222.9925335459013,195.33320047827814 1279.426438155972,249.52377156522232 1325,276 C 1370.573561844028,302.4762284347777 1405.286780922014,301.23811421738884 1440,300 C 1440,300 1440,600 1440,600 Z");
             }
           }</style><path d="M 0,600 C 0,600 0,300 0,300 C 51.635498870732036,292.6227296020042 103.27099774146407,285.2454592040084 135,285 C 166.72900225853593,284.7545407959916 178.5515079048758,291.64089278597055 219,305 C 259.4484920951242,318.35910721402945 328.5229706390328,338.1909696521096 368,347 C 407.4770293609672,355.8090303478904 417.35660953899304,353.5952286055913 458,368 C 498.64339046100696,382.4047713944087 570.0505912049953,413.4281159255252 615,403 C 659.9494087950047,392.5718840744748 678.4410256410256,340.69230769230774 718,348 C 757.5589743589744,355.30769230769226 818.1853062309023,421.802653305244 857,402 C 895.8146937690977,382.197346694756 912.817749435366,276.0970790867164 949,273 C 985.182250564634,269.9029209132836 1040.5436960276338,369.80903034789037 1080,365 C 1119.4563039723662,360.19096965210963 1143.0074664540987,250.66679952172186 1183,223 C 1222.9925335459013,195.33320047827814 1279.426438155972,249.52377156522232 1325,276 C 1370.573561844028,302.4762284347777 1405.286780922014,301.23811421738884 1440,300 C 1440,300 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="#6366f1ff" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
-    
-    
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4 bg-indigo-500 text-white">
+  
 
-       <div class="col-span-4 md:col-span-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-           <h1 class="text-2xl text-bold flex items-center justify-center mb-8">MY PICTURE</h1>
-           <hr class="w-36 -mt-6 h-4 mx-auto">
+      <div class="pb-4  -mb-1  pt-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 bg-indigo-500 hover:bg-indigo-500 duration-300">
+           <h1 class="text-2xl text-bold flex items-center justify-center text-white">MY PICTURE</h1>
+           <hr class="w-36 h-4 mx-auto">
       </div>
+
+
+    
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 px-4 bg-indigo-500 text-white py-4">
 
         <div class="transition ease-in-out delay-150 bg-indigo-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
             <img class="shadow-xl rounded-lg" src="source/img/square2.jpg" alt="">
@@ -114,10 +116,6 @@
         
         <div class="transition ease-in-out delay-150 bg-indigo-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
             <img class="rounded-lg" src="source/img/square3.jpeg"alt="">
-        </div>
-
-        <div class=" col-span-2 sm:hidden transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-            <img class="rounded-lg" src="source/img/long7.jpeg" alt="">
         </div>
         
         <div class="transition ease-in-out delay-150 bg-indigo-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
@@ -127,10 +125,6 @@
         <div class="transition ease-in-out delay-150 bg-indigo-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
             <img class="rounded-lg" src="source/img/square4.jpg" alt="">
         </div>
-        
-        <div class="col-span-2 sm:hidden transition ease-in-out delay-150 bg-indigo-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-            <img class="rounded-lg" src="source/img/long5.jpg" alt="">
-        </div>
 
         <div class="transition ease-in-out delay-150 bg-indigo-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
             <img class="rounded-lg" src="source/img/square7.jpeg" alt="">
@@ -138,10 +132,6 @@
         
         <div class="transition ease-in-out delay-150 bg-indigo-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
             <img class="rounded-lg" src="source/img/square5.jpg" alt="">
-        </div>
-
-        <div class="col-span-2 sm:hidden transition ease-in-out delay-150 bg-indigo-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-            <img class="rounded-lg" src="source/img/long1.jpg" alt="">
         </div>
 
         <div class="transition ease-in-out delay-150 bg-indigo-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
@@ -153,14 +143,6 @@
         </div>
        
         <div class="transition ease-in-out delay-150 bg-indigo-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-            <img class="rounded-lg" src="source/img/square10.jpg" alt="">
-        </div>
-        
-        <div class="transition ease-in-out delay-150 bg-indigo-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-            <img class="rounded-lg" src="source/img/square11.jpg" alt="">
-        </div>
-
-        <div class="transition ease-in-out delay-150 bg-indigo-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
             <img class="rounded-lg" src="source/img/square12.jpg" alt="">
         </div>
 
@@ -168,9 +150,18 @@
             <img class="rounded-lg" src="source/img/square13.jpg" alt="">
         </div>     
 
+        <div class="transition ease-in-out delay-150 bg-indigo-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+            <img class="rounded-lg" src="source/img/square10.jpg" alt="">
+        </div>
+        
+        <div class="transition ease-in-out delay-150 bg-indigo-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+            <img class="rounded-lg" src="source/img/square11.jpg" alt="">
+        </div>
+
+
   </div>
 
-<svg width="100%" height="100%" class="-mt-16" id="svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
+<svg width="100%" height="100%" class="-mt-16 md:-mt-28" id="svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
           .path-0{
             animation:pathAnim-0 4s;
             animation-timing-function: linear;
@@ -197,10 +188,6 @@
 
 
 
-
-
-
-
           <!-----------MyProject------------------------------->
 
 <div class="text-center mt-6" id="myproject">
@@ -210,9 +197,9 @@
 
       </div>
 
-  <div class="grid grid-cols-2 gap-4 px-4">
+  <div class="grid grid-cols-2 gap-2 px-4 md:grid-cols-3">
 
-      <div class="project1 pb-4 mt-4 rounded-xl bg-gradient-to-r from-indigo-500 to-pink-500 max-w-sm">
+      <div class="pb-4 mt-4 rounded-xl bg-gradient-to-r from-indigo-500 to-pink-500 max-w-sm">
           <h1 class="text-white text-sm p-4 uppercase">Personal Profile</h1>
           <img class="rounded-xl" src="source/img/myproject/p1.png" alt=""> 
           <p class="text-center text-xs mt-4 text-slate-200 mx-4">Membuat Website Personal Profile Menggunakan Framework tailwindcss</p>     
@@ -220,21 +207,20 @@
          <a href="" class="flex mt-4 mx-2  justify-center bg-slate-50 rounded-lg hover:bg-slate-700 hover:text-white text-sm  text-black p-2">Live Demo</a>
       </div>
 
-            <div class="project1 pb-4 mt-4 rounded-xl bg-gradient-to-r from-indigo-500 to-pink-500 max-w-sm">
+      <div class="pb-4 mt-4 rounded-xl bg-gradient-to-r from-indigo-500 to-pink-500 max-w-sm">
           <h1 class="text-white text-sm p-4 uppercase">BlogPost</h1>
           <img class="rounded-xl p-2" src="source/img/myproject/p2.png" alt=""> 
           <p class="text-center text-xs mt-4 text-slate-200 mx-4">Membuat Website Blog Pribadi menggunakan framework tailwindcss dengan topik materi keamanan komputer</p>     
           <a href="" class="flex mt-4 mx-2  justify-center bg-slate-50 rounded-lg hover:bg-slate-700 hover:text-white text-sm  text-black p-2">Download Source Code</a>
            <a href="https://zulhamabidin.github.io/KeamananKomputer/" class="flex mt-4 mx-2  justify-center bg-slate-50 rounded-lg hover:bg-slate-700 hover:text-white text-sm  text-black p-2">Live Demo</a>
-        </div>
+      </div>
 
-      <div class="col-span-4 mx-auto project1 pb-4 mt-4 rounded-xl bg-gradient-to-r from-indigo-500 to-pink-500 max-w-sm">
-          <h1 class="text-white text-sm p-4 uppercase">LARAVEL 8 CRUD SYSTEM</h1>
+      <div class="md:col-start-2 md:row-start-1 project1 pb-4 mt-4 rounded-xl bg-gradient-to-r from-indigo-500 to-pink-500 max-w-sm md:h-80">
+            <h1 class="text-white text-sm p-4 uppercase">LARAVEL 8 CRUD SYSTEM</h1>
           <img class="rounded-xl p-2" src="source/img/myproject/register.jpg" alt=""> 
           <p class="text-center text-xs mt-4 text-slate-200 mx-4">Membuat Website Crud System Basis Laravel 8</p>     
           <a href="" class="flex mt-4 mx-2  justify-center bg-slate-50 rounded-lg hover:bg-slate-700 hover:text-white text-sm  text-black p-2">Download Source Code</a>
       </div>
-    
 
 
   </div>
@@ -323,7 +309,7 @@
 
 <!-----------Contack Form------------------------------->
 
-  <form class="max-w-md mb-24 grid grid-cols-1 gap-4 m-4">
+  <form class="mb-24 grid grid-cols-1 gap-4 m-4">
 
        <div class="text-black col-span-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
            <h1 class="text-2xl text-bold flex items-center justify-center mb-8">CONTACT</h1>
