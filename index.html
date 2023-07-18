@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="icon" href="dist/images/logo.png" type="image/x-icon">
      <title>ZulhamAbidin</title>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
     <link href="dist/output.css" rel="stylesheet">
 </head>
 
@@ -111,7 +112,7 @@
                 </div>
                 <div class="flex flex-col items-center pb-10">
                     <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="dist/images/profile.webp" alt="Bonnie image" />
-                    <h5 class="mb-1 text-sm font-medium text-gray-900 dark:text-white">Zulham Abidin</h5>
+                    <h5 class="mb-1 text-sm font-medium text-gray-900 dark:text-white" id="typed-text"></h5>
                     <span class="text-xs text-gray-500 dark:text-gray-400">Pelajar</span>
                     <div class="flex mt-4 space-x-3 md:mt-6">
                         <a href="https://www.instagram.com/zlhm.a/"
@@ -311,6 +312,22 @@
 
     </div>
 
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var typed = new Typed('#typed-text', {
+        strings: ["Zulham Abidin."],
+        typeSpeed: 120,
+        backSpeed: 50,
+        loop: true
+      });
+    });
+  </script>
+
+   <style>
+        .typed-cursor {
+            display: none !important;
+        }
+    </style>
     <script src="dist/output.js"></script>
 </body>
 
