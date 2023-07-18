@@ -1,2 +1,2 @@
 node_modules/
-!node_modules/flowbite/dist/flowbite.min.js
+# !node_modules/flowbite/dist/flowbite.min.js
