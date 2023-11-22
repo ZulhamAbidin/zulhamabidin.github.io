@@ -8,7 +8,7 @@
 
 
     ///Create a negative margin to prevent content 'jumps':
-    stickyElement.after('<div class="jumps-prevent"></div>');
+    // stickyElement.after('<div class="jumps-prevent"></div>');
 
     function jumpsPrevent() {
         stickyHeight = stickyElement.innerHeight();
