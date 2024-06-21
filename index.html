@@ -1,456 +1,439 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
   <title>zlhm.a</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="">
   <link rel="icon" href="assets/images/logo.webp" type="image/x-icon">
-  <link rel="stylesheet" href="assets/fonts/inter/inter.css" id="main-font-link" />
-  <link rel="stylesheet" href="assets/fonts/tabler-icons.min.css" />
-  <link rel="stylesheet" href="assets/fonts/feather.css" />
-  <link rel="stylesheet" href="assets/fonts/fontawesome.css" />
-  <link rel="stylesheet" href="assets/fonts/material.css" />
-  <link rel="stylesheet" href="assets/css/style.css" id="main-style-link" />
-  <link rel="stylesheet" href="assets/css/style-preset.css" />
-  <style>
-    .text-justify {
-      text-align: justify;
-    }
-  </style>
-  <script>
-    !(function () {
-      if (window.t4hto4) console.log('WiserNotify pixel installed multiple time in this page');
-      else {
-        window.t4hto4 = !0;
-        var t = document,
-          e = window,
-          n = function () {
-            var e = t.createElement('script');
-            (e.type = 'text/javascript'),
-            (e.async = !0),
-            (e.src = '../../../../pt.wisernotify.com/pixel6d4c.js'),
-            document.body.appendChild(e);
-          };
-        'complete' === t.readyState ? n() : window.attachEvent ? e.attachEvent('onload', n) : e.addEventListener(
-          'load', n, !1);
-      }
-    })();
-  </script>
-
+  <link href="assets/css/plugins/animate.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="assets/fonts/inter/inter.css" id="main-font-link">
+  <link rel="stylesheet" href="assets/fonts/phosphor/duotone/style.css">
+  <link rel="stylesheet" href="assets/fonts/tabler-icons.min.css">
+  <link rel="stylesheet" href="assets/fonts/feather.css">
+  <link rel="stylesheet" href="assets/fonts/fontawesome.css">
+  <link rel="stylesheet" href="assets/fonts/material.css">
+  <link rel="stylesheet" href="assets/css/style.css" id="main-style-link">
+  <link rel="stylesheet" href="assets/css/style-preset.css">
+  <script src="assets/js/tech-stack.js"></script>
+  <link rel="stylesheet" href="assets/css/landing.css">
 </head>
 
-<body data-pc-preset="preset-1" data-pc-sidebar-caption="true" data-pc-direction="ltr" data-pc-theme_contrast="" data-pc-theme="light">
-  
-  <header class="pc-header">
-    <div class="header-wrapper">
+<body data-pc-preset="preset-1" data-pc-sidebar-caption="true" data-pc-direction="ltr" data-pc-theme_contrast=""
+  data-pc-theme="light" class="landing-page">
 
-      <div class="me-auto pc-mob-drp">
-        <ul class="list-unstyled">
-          <li class="dropdown pc-h-item">
-            zlhm.a
-          </li>
-        </ul>
+  <header id="home" style="">
+    <nav class="navbar navbar-expand-md navbar-light default">
+      <div class="container">
+        <a class="navbar-brand text-black ps-4 fw-semibold" href="">zlhm.a
+        </a>
+        <button class="navbar-toggler rounded" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item px-1"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item px-1"><a class="nav-link" href="#about">Tentang</a></li>
+            <li class="nav-item px-1"><a class="nav-link" href="#education">Pendidikan</a></li>
+            <li class="nav-item px-1"><a class="nav-link" href="#projects">Proyek Website</a></li>
+            <li class="nav-item px-1"><a class="nav-link" href="#pictures">Gambar</a></li>
+            <li class="nav-item">
+              <a class="btn mb-2 mx-1 btn-primary" href="https://www.linkedin.com/in/zlhm/">Linkedin</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn mb-2 mx-1 btn-primary" href="https://instagram.com/zlhm.a">Instagram</a>
+            </li>
+          </ul>
+        </div>
+
       </div>
+    </nav>
 
-      <div class="ms-auto">
-        <ul class="list-unstyled">
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var navToggler = document.querySelector(".navbar-toggler");
+        var navbarCollapse = document.querySelector(".navbar-collapse");
 
-          <li class="dropdown pc-h-item">
-            <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button"
-              aria-haspopup="false" aria-expanded="false">
-              <svg class="pc-icon">
-                <use xlink:href="#custom-sun-1"></use>
-              </svg>
-            </a>
-
-            <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
-              <a href="#!" class="dropdown-item" onclick="layout_change('dark')">
-                <svg class="pc-icon">
-                  <use xlink:href="#custom-moon"></use>
-                </svg>
-                <span>Dark</span>
-              </a>
-              <a href="#!" class="dropdown-item" onclick="layout_change('light')">
-                <svg class="pc-icon">
-                  <use xlink:href="#custom-sun-1"></use>
-                </svg>
-                <span>Light</span>
-              </a>
-            </div>
-
-          </li>
-
-          <li class="dropdown pc-h-item header-user-profile">
-            <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button"
-              aria-haspopup="false" data-bs-auto-close="outside" aria-expanded="false">
-              <img src="assets/images/a.jpg" alt="user-image" class="user-avtar" />
-            </a>
-            <div class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown">
-              <div class="dropdown-header d-flex align-items-center justify-content-between">
-                <h5 class="m-0">Profile</h5>
-              </div>
-              <div class="dropdown-body">
-                <div class="profile-notification-scroll position-relative" style="max-height: calc(100vh - 225px)">
-                  <div class="d-flex mb-1">
-                    <div class="flex-shrink-0">
-                      <img src="assets/images/a.jpg" alt="user-image" class="user-avtar wid-35" />
-                    </div>
-                    <div class="flex-grow-1 ms-3">
-                      <h6 class="mb-1">Zulham Abidin</h6>
-                      <span><a href="" class="__cf_email__"
-                          data-cfemail="e6858794958988c8828794948f88a685898b9687889fc88f89">[email&#160;protected]</a></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-    </div>
+        navToggler.addEventListener("click", function () {
+          navbarCollapse.classList.toggle("show");
+        });
+      });
+    </script>
   </header>
 
-  <div class="pc-container">
-    <div class="pc-content">
-      <div class="page-header">
-        <div class="page-block">
-          <div class="row align-items-center">
-            <div class="col-md-12">
-              <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="">Application</a></li>
-                <li class="breadcrumb-item"><a href="javascript: void(0)">Profile</a></li>
-                <li class="breadcrumb-item" aria-current="page">Zulham Abidin</li>
-              </ul>
-            </div>
-            <div class="col-md-12">
-              <div class="page-header-title">
-                <h2 class="mb-0">Profile</h2>
-              </div>
+  <div class="container">
+    <div class="page-header">
+      <div class="page-block">
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a href="">Profile</a></li>
+              <!-- <li class="breadcrumb-item"><a href="javascript: void(0)">Profile</a></li> -->
+              <li class="breadcrumb-item" aria-current="page">Zulham Abidin</li>
+            </ul>
+          </div>
+          <div class="col-md-12">
+            <div class="page-header-title">
+              <h2 class="mb-0">Profile</h2>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="card social-profile">
-            <img src="assets/images/b.webp" alt="" class="w-100 card-img-top" />
-            <div class="card-body pt-0">
-              <div class="row align-items-end">
-                <div class="col-md-auto text-md-start">
-                  <img class="img-fluid img-profile-avtar" src="assets/images/a.jpg" alt="User image" />
-                </div>
-                <div class="col">
-                  <div class="row justify-content-between align-items-end">
-                    <div class="col-md-auto soc-profile-data">
-                      <h5 class="mb-1">Zulham Abidin</h5>
-                      <p class="mb-0">Student</p>
-                    </div>
-                    <div class="col-md-auto">
-                      <a href="https://www.instagram.com/zlhm.a" class="btn btn-primary me-3">Pesan</a>
-                      <a href="https://www.instagram.com/zlhm.a" class="btn btn-outline-secondary">Ikuti</a>
-                    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card social-profile">
+          <img src="assets/images/b.webp" alt="" class="w-100 mb-4 card-img-top" />
+          <div class="card-body pt-0">
+            <div class="row align-items-end">
+              <div class="col-md-auto text-md-start">
+                <img class="img-fluid img-profile-avtar" src="assets/images/a.jpg" alt="User image" />
+              </div>
+              <div class="col">
+                <div class="row  justify-content-between align-items-end">
+                  <div class="col-md-auto soc-profile-data">
+                    <h5 class="mb-1 ">Zulham Abidin</h5>
+                    <p class="mb-0">Student</p>
+                  </div>
+                  <div id="about"></div>
+                  <div class="col-md-auto">
+                    <a href="https://www.linkedin.com/in/zlhm/" class=" mx-1 btn btn-primary me-3">Linkedin</a>
+                    <a href="https://www.instagram.com/zlhm.a" class=" mx-1 btn btn-outline-secondary">Instagram</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="row">
 
-            <div class="col-lg-12 col-xxl-3">
-              <div class="card">
-                <div class="card-header d-flex align-items-center justify-content-between">
-                  <h5>Bio</h5>
-                </div>
-                <div class="card-body">
-                  <p class="mb-0 text-justify">
-                    I'm Zulham Abidin, 23 years old, from Indonesia, and have been pursuing a career as a web developer.
-                    My interest in creating and developing websites began at the age of 18, which then led me to pursue
-                    an education in Informatics Engineering.
-                    In 2019, I decided to continue my education at Makassar State University with a focus on Informatics
-                    and Computer Engineering majors which I completed in 2023.
-                    During my career in web development I have managed to build several web-based applications.
-                  </p>
-                </div>
+
+        <div class="row">
+          <div class="col-lg-12 col-xxl-3">
+            <div class="card">
+              <div class="card-header d-flex align-items-center justify-content-between">
+                <h5>About Me</h5>
+              </div>
+              <div class="card-body text-lg">
+                <p class="mb-0 text-justify">
+                  <div id="education"></div>
+                  Saya Zulham Abidin, 23 tahun, dari Indonesia, dan sedang mengejar karier sebagai pengembang web.
+                  Ketertarikan saya pada pembuatan dan pengembangan website dimulai pada usia 18 tahun, yang kemudian
+                  mendorong saya untuk menempuh pendidikan di bidang Teknik Informatika. Pada tahun 2019, saya
+                  memutuskan untuk melanjutkan pendidikan di Universitas Negeri Makassar dengan fokus pada jurusan
+                  Teknik Informatika dan Komputer, yang saya selesaikan pada tahun 2023. Selama karier saya di bidang
+                  pengembangan web, saya telah berhasil membangun beberapa aplikasi berbasis web.
+                </p>
               </div>
             </div>
+          </div>
 
-            <div class="col-lg-12 col-xxl-3">
-              <div class="card">
-                <div class="card-header">
-                  <h5>Education</h5>
-                </div>
-                <div class="card-body">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <p class="mb-1 text-muted">Sekolah Menengah Kejuruan</p>
-                          <p class="mb-0">2016-2019</p>
-                        </div>
-                        <div class="col-md-6">
-                          <p class="mb-1 text-muted">SMK Negeri 4 Gowa</p>
-                          <p class="mb-0">Jurusan Teknik Komputer dan Jaringan</p>
-                        </div>
+          <div class="col-lg-12 col-xxl-3">
+            <div class="card">
+              <div class="card-header">
+                <h5>Education</h5>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p class="mb-1 text-muted">Sekolah Menengah Kejuruan</p>
+                        <p class="mb-0">2016-2019</p>
                       </div>
-                    </li>
-                    <li class="list-group-item px-0 pb-0">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <p class="mb-1 text-muted">Perguruan Tinggi</p>
-                          <p class="mb-0">2019-2023</p>
-                        </div>
-                        <div class="col-md-6">
-                          <p class="mb-1 text-muted">Universitas Negeri Makassar</p>
-                          <p class="mb-0">Jurusan Teknik Informatika dan Komputer</p>
-                        </div>
+                      <div class="col-md-6">
+                        <p class="mb-1 text-muted">SMK Negeri 4 Gowa</p>
+                        <p class="mb-0">Jurusan Teknik Komputer dan Jaringan</p>
                       </div>
-                    </li>
-                  </ul>
-                </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item px-0 pb-0">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p class="mb-1 text-muted">Perguruan Tinggi</p>
+                        <p class="mb-0">2019-2023</p>
+                      </div>
+                      <div class="col-md-6">
+                        <p class="mb-1 text-muted">Universitas Negeri Makassar</p>
+                        <p class="mb-0">Jurusan Teknik Informatika dan Komputer</p>
+                      </div>
+                      <div id="projects"></div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
+          </div>
 
-            <div class="col-lg-12 col-xxl-3">
-              <div class="card">
-                <div class="card-header">
-                  <h5>Project Website</h5>
-                </div>
+          <div id="projects" class="col-lg-12 col-xxl-3">
+            <div class="card">
+              <div class="card-header">
+                <h5>Project Website</h5>
+              </div>
 
-                <div class="card-body">
-                  <ul class="list-group list-group-flush">
-                    
-                    <li class="list-group-item px-0 pt-0">
-                      <div class="row">
-                        <div class="col-md-6 pt-4">
-                          <p class="mb-1 text-muted">E-Document</p>
-                          <p class="mb-0 text-justify">Di Bidang Penempatan Tenaga Kerja Dan Perluasa Kesempatan Kerja
-                            Dinas Ketenagakerjaan Kota Makassar Pengesahan KARTU AK1.</p>
-                        </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
 
-                        <div class="col-md-6 pt-4">
-                          <p class="mb-1 text-muted">E-PARIWISATA Kabupaten Soppeng.</p>
-                          <p class="mb-0 text-justify">Melalui adanya E-Pariwisata maka konsumen akan sangat mudah
-                            merencanakan serta melakukan perhitungan yang tepat untuk mendapatkan paket liburannya. Hal
-                            ini disebabkan karena konsumen dalam hal ini wisatawan dapat mengetahui kepastian biaya yang
-                            dikeluarkan pada saat melakukan perjalanan.</p>
-                        </div>
+                  <style>
+                    .text-justify {
+                      text-align: justify !important;
+                    }
+                  </style>
 
-                        <div class="col-md-6 pt-4">
-                          <p class="mb-1 text-muted">Unit Kegiatan Paduan Suara Mahasiswa Universitas Negeri Makassar
-                            <p>
-                              <p class="mb-0 text-justify">Tujuan dari aplikasi ini adalah Meningkatkan visibilitas
-                                PINISI Choir atau unit kegiatan paduan suara untuk meningkat integritasi berlembaga
-                                dalam hal publikasi kegiatan dan prestasi prestasinya. Kami berharap bahwa PINISI Choir
-                                atau unit kegiatan paduan suara akan memberikan manfaat dalam memajukan paduan suara di
-                                indonesia timur.</p>
-                        </div>
-
-                        <div class="col-md-6 pt-4">
-                          <p class="mb-1 text-muted">Sistem Informasi Pengelolaan Dana Desa</p>
-                          <p class="mb-0 text-justify">SIKUDES ini adalah sebuah solusi inovatif untuk mengelola dana
-                            desa di wilayah Panyiwi, Kabupaten Bone. Dikembangkan sebagai sistem informasi berbasis web,
-                            aplikasi ini tidak hanya menciptakan efisiensi dalam administrasi keuangan desa, tetapi juga
-                            menjanjikan pendekatan yang berbeda dalam pengembangan teknologi.</p>
-                        </div>
-
+                  <li class="list-group-item px-0 pt-0">
+                    <div class="row">
+                      <div class="col-md-6 pt-4">
+                        <p class="mb-1 text-muted fw-semibold">E-Document</p>
+                        <p class="mb-0 text-justify">Di Bidang Penempatan Tenaga Kerja Dan Perluasa Kesempatan Kerja
+                          Dinas Ketenagakerjaan Kota Makassar Pengesahan KARTU AK1. Tujuan selain untuk kebutuhan tugas
+                          akhir, projects website
+                          tersebut berperan untuk melakukan rekap masyarakat yang telah melakukan pengesahan Kartu AK1,
+                          menggunakan sistem approve dari user admin.</p>
                       </div>
-                    </li>
 
-                  </ul>
-                </div>
+                      <div class="col-md-6 pt-4">
+                        <p class="mb-1 text-muted fw-semibold">E-PARIWISATA Kabupaten Soppeng.</p>
+                        <p class="mb-0 text-justify">Melalui adanya E-Pariwisata maka konsumen akan sangat mudah
+                          merencanakan serta melakukan perhitungan yang tepat untuk mendapatkan paket liburannya. Hal
+                          ini disebabkan karena konsumen dalam hal ini wisatawan dapat mengetahui kepastian biaya yang
+                          dikeluarkan pada saat melakukan perjalanan.</p>
+                      </div>
+
+                      <div class="col-md-6 pt-4">
+                        <p class="mb-1 text-muted fw-semibold">Unit Kegiatan Paduan Suara Mahasiswa Universitas Negeri
+                          Makassar
+                          <p>
+                            <p class="mb-0 text-justify">Tujuan dari aplikasi ini adalah Meningkatkan visibilitas
+                              PINISI Choir atau unit kegiatan paduan suara untuk meningkat integritasi berlembaga
+                              dalam hal publikasi kegiatan dan prestasi prestasinya. Kami berharap bahwa PINISI Choir
+                              atau unit kegiatan paduan suara akan memberikan manfaat dalam memajukan paduan suara di
+                              indonesia timur.</p>
+                      </div>
+
+                      <div class="col-md-6 pt-4">
+                        <p class="mb-1 text-muted fw-semibold">Sistem Informasi Pengelolaan Dana Desa</p>
+                        <p class="mb-0 text-justify">SIKUDES ini adalah sebuah solusi inovatif untuk mengelola dana
+                          desa di wilayah Panyiwi, Kabupaten Bone. Dikembangkan sebagai sistem informasi berbasis web,
+                          aplikasi ini tidak hanya menciptakan efisiensi dalam administrasi keuangan desa, tetapi juga
+                          menjanjikan pendekatan yang berbeda dalam pengembangan teknologi.</p>
+                      </div>
+
+                      <div class="col-md-6 pt-4">
+                        <p class="mb-1 text-muted fw-semibold">Majalah Nusantara</p>
+                        <p class="mb-0 text-justify">Majalah Nusantara adalah aplikasi berbasis website untuk penyebaran
+                          berita dan informasi, dengan tiga jenis pengguna berbeda. Pengunjung dapat membaca berita dan
+                          membeli konten premium atau langganan majalah. Admin mengelola dan mengkonfirmasi pembelian,
+                          memantau aktivitas pengguna, dan memastikan operasional website. Jurnalis membuat, mengedit,
+                          dan mempublikasikan berita, serta mengelola konten agar selalu menarik dan aktual.</p>
+                      </div>
+
+                      <div class="col-md-6 pt-4">
+                        <p class="mb-1 text-muted fw-semibold">Sistem Informasi Organisasi Siswa Intra Sekolah (OSIS)
+                        </p>
+                        <p class="mb-0 text-justify">Sistem Informasi Organisasi Siswa Intra Sekolah (OSIS) di SMK 1 Kabupaten Majene adalah platform digital yang memungkinkan siswa, dan
+                          pengurus OSIS mengakses informasi terkait program kerja, jadwal kegiatan, dan
+                          dokumentasi acara. Sistem ini meningkatkan koordinasi antaranggota, mendukung transparansi,
+                          serta meningkatkan partisipasi siswa dalam kegiatan sekolah. Tujuan utama
+                          pembuatan sistem ini adalah untuk memenuhi program kerja pengembang web selama KKN di
+                          Kabupaten Majene.</p>
+                      </div>
+                      <div id="pictures"></div>
+                    </div>
+                  </li>
+
+                </ul>
               </div>
             </div>
+          </div>
 
-            <div class="col-lg-12 col-xxl-3">
-              <div class="card">
-                <div class="card-header d-flex align-items-center justify-content-between">
-                  <h5>Gallery</h5>
-                </div>
+          <div class="col-lg-12 col-xxl-3">
+            <div class="card">
+              <div class="card-header d-flex align-items-center justify-content-between">
+                <h5>Gallery</h5>
+              </div>
 
-                <div class="card-body">
+              <div class="card-body">
 
-                  <div class="row g-2">
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-1.webp">
-                        <img src="assets/images/gallery/card-picture-1.webp" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-2.webp">
-                        <img src="assets/images/gallery/card-picture-2.webp" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-3.jpg">
-                        <img src="assets/images/gallery/card-picture-3.jpg" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-4.jpg">
-                        <img src="assets/images/gallery/card-picture-4.jpg" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-5.jpeg">
-                        <img src="assets/images/gallery/card-picture-5.jpeg" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-6.jpg">
-                        <img src="assets/images/gallery/card-picture-6.jpg" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-7.webp">
-                        <img src="assets/images/gallery/card-picture-7.webp" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-8.jpg">
-                        <img src="assets/images/gallery/card-picture-8.jpg" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-9.jpeg">
-                        <img src="assets/images/gallery/card-picture-9.jpeg" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-10.jpg">
-                        <img src="assets/images/gallery/card-picture-10.jpg" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-11.jpg">
-                        <img src="assets/images/gallery/card-picture-11.jpg" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-12.webp">
-                        <img src="assets/images/gallery/card-picture-12.webp" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-13.jpg">
-                        <img src="assets/images/gallery/card-picture-13.jpg" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-14.jpg">
-                        <img src="assets/images/gallery/card-picture-14.jpg" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-15.jpg">
-                        <img src="assets/images/gallery/card-picture-15.jpg" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-16.jpg">
-                        <img src="assets/images/gallery/card-picture-16.jpg" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-17.jpg">
-                        <img src="assets/images/gallery/card-picture-17.jpg" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-18.jpg">
-                        <img src="assets/images/gallery/card-picture-18.jpg" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                      <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-19.jpg">
-                        <img src="assets/images/gallery/card-picture-19.jpg" alt="img" class="card-img" />
-                        <div class="card-img-overlay">
-                          <i class="ti ti-search"></i>
-                        </div>
-                      </a>
-                    </div>
-
+                <div class="row g-2">
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-1.webp">
+                      <img src="assets/images/gallery/card-picture-1.webp" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
                   </div>
+
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-2.webp">
+                      <img src="assets/images/gallery/card-picture-2.webp" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-3.jpg">
+                      <img src="assets/images/gallery/card-picture-3.jpg" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-4.jpg">
+                      <img src="assets/images/gallery/card-picture-4.jpg" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-5.jpeg">
+                      <img src="assets/images/gallery/card-picture-5.jpeg" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-6.jpg">
+                      <img src="assets/images/gallery/card-picture-6.jpg" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-7.webp">
+                      <img src="assets/images/gallery/card-picture-7.webp" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-8.jpg">
+                      <img src="assets/images/gallery/card-picture-8.jpg" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-9.jpeg">
+                      <img src="assets/images/gallery/card-picture-9.jpeg" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-10.jpg">
+                      <img src="assets/images/gallery/card-picture-10.jpg" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-11.jpg">
+                      <img src="assets/images/gallery/card-picture-11.jpg" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-12.webp">
+                      <img src="assets/images/gallery/card-picture-12.webp" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-13.jpg">
+                      <img src="assets/images/gallery/card-picture-13.jpg" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-14.jpg">
+                      <img src="assets/images/gallery/card-picture-14.jpg" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-15.jpg">
+                      <img src="assets/images/gallery/card-picture-15.jpg" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-16.jpg">
+                      <img src="assets/images/gallery/card-picture-16.jpg" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-17.jpg">
+                      <img src="assets/images/gallery/card-picture-17.jpg" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-18.jpg">
+                      <img src="assets/images/gallery/card-picture-18.jpg" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-xl-4">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-19.jpg">
+                      <img src="assets/images/gallery/card-picture-19.jpg" alt="img" class="card-img" />
+                      <div class="card-img-overlay">
+                        <i class="ti ti-search"></i>
+                      </div>
+                    </a>
+                  </div>
+
                 </div>
               </div>
             </div>
-
           </div>
 
         </div>
@@ -470,50 +453,64 @@
     </div>
   </div>
 
-  <footer class="pc-footer">
-    <div class="footer-wrapper container-fluid">
-      <div class="row">
-        <div class="col my-1 text-center">
-          <p class="m-0">Zulham Abidin
-            <a class="text-center" href="https://rapidwebcraftid.github.io" target="_blank">Rapid Web Craft ID</a>
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col my-1 wow fadeInUp" data-wow-delay="0.4s">
+          <p class="mb-0">© Majalah Nusantara by Team <a href="https://www.instagram.com/zlhm.a">Rapid Web Craft Id</a>
           </p>
+        </div>
+        <div class="col-auto my-1">
+          <ul class="list-inline footer-sos-link mb-0">
+            <li class="list-inline-item wow fadeInUp" data-wow-delay="0.4s"><a
+                href="https://www.instagram.com/zlhm.a"><svg class="pc-icon">
+                  <use xlink:href="#custom-airplane"></use>
+                </svg></a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </footer>
 
-  <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.navbar-toggler').click(function () {
+        $('#navbarNav').toggleClass('show');
+      });
+    });
+  </script>
+
+  <script src="../code.jquery.com/jquery-3.6.1.min.js"></script>
   <script src="assets/js/plugins/popper.min.js"></script>
   <script src="assets/js/plugins/simplebar.min.js"></script>
   <script src="assets/js/plugins/bootstrap.min.js"></script>
   <script src="assets/js/fonts/custom-font.js"></script>
   <script src="assets/js/pcoded.js"></script>
   <script src="assets/js/plugins/feather.min.js"></script>
-
   <script>
     layout_change('light');
   </script>
-
   <script>
-    layout_sidebar_change('false');
+    layout_theme_contrast_change('false');
   </script>
-
   <script>
     change_box_container('false');
   </script>
-
   <script>
     layout_caption_change('true');
   </script>
-
   <script>
     layout_rtl_change('false');
   </script>
-
   <script>
-    preset_change("preset-1");
+    preset_change('preset-1');
   </script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
   <script>
     var lightboxModal = new bootstrap.Modal(document.getElementById('lightboxModal'));
     var elem = document.querySelectorAll('[data-lightbox]');
@@ -542,6 +539,60 @@
       }
     }
   </script>
+  <script>
+    let ost = 0;
+    document.addEventListener('scroll', function () {
+      let cOst = document.documentElement.scrollTop;
+      if (cOst == 0) {
+        document.querySelector('.navbar').classList.add('top-nav-collapse');
+      } else if (cOst > ost) {
+        document.querySelector('.navbar').classList.add('top-nav-collapse');
+        document.querySelector('.navbar').classList.remove('default');
+      } else {
+        document.querySelector('.navbar').classList.add('default');
+        document.querySelector('.navbar').classList.remove('top-nav-collapse');
+      }
+      ost = cOst;
+    });
+
+    var wow = new WOW({
+      animateClass: 'animated'
+    });
+    wow.init();
+
+    $('.screen-slide').owlCarousel({
+      loop: true,
+      margin: 30,
+      center: true,
+      nav: false,
+      dotsContainer: '.app_dotsContainer',
+      URLhashListener: true,
+      items: 1
+    });
+    $('.workspace-slider').owlCarousel({
+      loop: true,
+      margin: 30,
+      center: true,
+      nav: false,
+      dotsContainer: '.workspace-card-block',
+      URLhashListener: true,
+      items: 1.5
+    });
+    $('.marquee').marquee({
+      duration: 500000,
+      pauseOnHover: true,
+      startVisible: true,
+      duplicated: true
+    });
+    $('.marquee-1').marquee({
+      duration: 500000,
+      pauseOnHover: true,
+      startVisible: true,
+      duplicated: true,
+      direction: 'right'
+    });
+  </script>
 
 </body>
+
 </html>

@@ -98,11 +98,11 @@ section {
 header {
   overflow: hidden;
   position: relative;
-  padding: 100px 0;
+  padding: 50px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-size: cover;
   flex-direction: column;
 }
@@ -321,7 +321,7 @@ header .container {
   }
   header {
     text-align: center;
-    padding: 100px 0 100px;
+    /* padding: 100px 0 100px; */
   }
   header .technology-block .list-inline-item:first-child {
     border-left: none;
