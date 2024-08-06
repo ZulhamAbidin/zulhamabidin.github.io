@@ -21,28 +21,29 @@
   <link rel="stylesheet" href="assets/css/landing.css">
 
   <style>
-      @media (max-width: 575.98px) {
+    @media (max-width: 575.98px) {
       .page-header {
-          padding: 15px 0px !important; 
+        padding: 15px 0px !important;
       }
-  }
+    }
 
-  @media (max-width: 1024px) {
-    .page-header {
+    @media (max-width: 1024px) {
+      .page-header {
         position: relative;
         left: 0;
         top: 0;
         margin-left: 0px;
         margin-right: 10px;
         margin-bottom: 10px;
+      }
     }
-}
 
-  .custom-height {
-    height: 350px; /* Atur tinggi sesuai kebutuhan Anda */
-    object-fit: cover; /* Menjaga proporsi gambar */
-  }
-
+    .custom-height {
+      height: 350px;
+      /* Atur tinggi sesuai kebutuhan Anda */
+      object-fit: cover;
+      /* Menjaga proporsi gambar */
+    }
   </style>
 </head>
 
@@ -116,10 +117,24 @@
     <div class="row">
       <div class="col-sm-12">
         <div class="card social-profile">
-          <video class="embed-responsive-item w-100 mb-4 card-img-top" autoplay muted loop>
+          <!-- <video class="embed-responsive-item w-100 mb-4 card-img-top" autoplay muted loop>
             <source src="assets/images/gallery/vidio-1.mp4" type="video/mp4">
-              Browser atau perangkat anda tidak mendukung
-          </video>
+            Browser atau perangkat anda tidak mendukung
+          </video> -->
+          <div class="row flex">
+            <div class="col-6">
+              <video class="embed-responsive-item w-100 mb-4 card-img-top" autoplay muted loop>
+                <source src="assets/images/gallery/vidio-1.mp4" type="video/mp4">
+                Browser atau perangkat anda tidak mendukung
+              </video>
+            </div>
+            <div class="col-6">
+              <video class="embed-responsive-item w-100 mb-4 card-img-top" autoplay muted loop preload="auto">
+                <source src="assets/images/gallery/vidio-1.mp4" type="video/mp4">
+                Browser atau perangkat anda tidak mendukung
+              </video>
+            </div>
+          </div>
           <div class="card-body pt-0">
             <div class="row align-items-end">
               <div class="col-md-auto text-md-start">
@@ -133,8 +148,10 @@
                   </div>
                   <div id="about"></div>
                   <div class="col-md-auto">
-                    <a href="https://www.linkedin.com/in/zlhm/" target="_blank" class=" mx-1 btn btn-primary me-3">Linkedin</a>
-                    <a href="https://www.instagram.com/zlhm.a" target="_blank" class=" mx-1 btn btn-outline-secondary">Instagram</a>
+                    <a href="https://www.linkedin.com/in/zlhm/" target="_blank"
+                      class=" mx-1 btn btn-primary me-3">Linkedin</a>
+                    <a href="https://www.instagram.com/zlhm.a" target="_blank"
+                      class=" mx-1 btn btn-outline-secondary">Instagram</a>
                   </div>
                 </div>
               </div>
@@ -158,7 +175,7 @@
                     text-indent: 20px !important;
                   }
                 </style>
-                
+
                 <p class="mb-0 justify lh-lg text-capitalize">
                   Saya Zulham Abidin, 23 tahun, dari Indonesia, dan sedang mengejar karier sebagai pengembang web.
                   Ketertarikan saya pada pembuatan dan pengembangan website dimulai pada usia 18 tahun, yang kemudian
@@ -167,7 +184,7 @@
                   Teknik Informatika dan Komputer, yang saya selesaikan pada tahun 2023. Selama karier saya di bidang
                   pengembangan web, saya telah berhasil membangun beberapa aplikasi berbasis web.
                 </p>
-                
+
                 <div id="education"></div>
               </div>
             </div>
@@ -230,7 +247,8 @@
                     <div class="row">
                       <div class="col-md-6 pt-4">
                         <p class="mb-1 text-muted fw-semibold lh-lg">E-Document</p>
-                        <p class="mb-0 text-justify lh-lg text-capitalize">Di Bidang Penempatan Tenaga Kerja Dan Perluasa Kesempatan Kerja
+                        <p class="mb-0 text-justify lh-lg text-capitalize">Di Bidang Penempatan Tenaga Kerja Dan
+                          Perluasa Kesempatan Kerja
                           Dinas Ketenagakerjaan Kota Makassar Pengesahan KARTU AK1. Tujuan selain untuk kebutuhan tugas
                           akhir, projects website
                           tersebut berperan untuk melakukan rekap masyarakat yang telah melakukan pengesahan Kartu AK1,
@@ -239,17 +257,20 @@
 
                       <div class="col-md-6 pt-4">
                         <p class="mb-1 text-muted fw-semibold lh-lg">E-PARIWISATA Kabupaten Soppeng.</p>
-                        <p class="mb-0 text-justify lh-lg text-capitalize">Melalui adanya E-Pariwisata maka konsumen akan sangat mudah
+                        <p class="mb-0 text-justify lh-lg text-capitalize">Melalui adanya E-Pariwisata maka konsumen
+                          akan sangat mudah
                           merencanakan serta melakukan perhitungan yang tepat untuk mendapatkan paket liburannya. Hal
                           ini disebabkan karena konsumen dalam hal ini wisatawan dapat mengetahui kepastian biaya yang
                           dikeluarkan pada saat melakukan perjalanan.</p>
                       </div>
 
                       <div class="col-md-6 pt-4">
-                        <p class="mb-1 text-muted fw-semibold lh-lg">Unit Kegiatan Paduan Suara Mahasiswa Universitas Negeri
+                        <p class="mb-1 text-muted fw-semibold lh-lg">Unit Kegiatan Paduan Suara Mahasiswa Universitas
+                          Negeri
                           Makassar
                           <p>
-                            <p class="mb-0 text-justify lh-lg text-capitalize">Tujuan dari aplikasi ini adalah Meningkatkan visibilitas
+                            <p class="mb-0 text-justify lh-lg text-capitalize">Tujuan dari aplikasi ini adalah
+                              Meningkatkan visibilitas
                               PINISI Choir atau unit kegiatan paduan suara untuk meningkat integritasi berlembaga
                               dalam hal publikasi kegiatan dan prestasi prestasinya. Kami berharap bahwa PINISI Choir
                               atau unit kegiatan paduan suara akan memberikan manfaat dalam memajukan paduan suara di
@@ -258,7 +279,8 @@
 
                       <div class="col-md-6 pt-4">
                         <p class="mb-1 text-muted fw-semibold lh-lg">Sistem Informasi Pengelolaan Dana Desa</p>
-                        <p class="mb-0 text-justify lh-lg text-capitalize">SIKUDES ini adalah sebuah solusi inovatif untuk mengelola dana
+                        <p class="mb-0 text-justify lh-lg text-capitalize">SIKUDES ini adalah sebuah solusi inovatif
+                          untuk mengelola dana
                           desa di wilayah Panyiwi, Kabupaten Bone. Dikembangkan sebagai sistem informasi berbasis web,
                           aplikasi ini tidak hanya menciptakan efisiensi dalam administrasi keuangan desa, tetapi juga
                           menjanjikan pendekatan yang berbeda dalam pengembangan teknologi.</p>
@@ -266,7 +288,8 @@
 
                       <div class="col-md-6 pt-4">
                         <p class="mb-1 text-muted fw-semibold lh-lg">Majalah Nusantara</p>
-                        <p class="mb-0 text-justify lh-lg text-capitalize">Majalah Nusantara adalah aplikasi berbasis website untuk penyebaran
+                        <p class="mb-0 text-justify lh-lg text-capitalize">Majalah Nusantara adalah aplikasi berbasis
+                          website untuk penyebaran
                           berita dan informasi, dengan tiga jenis pengguna berbeda. Pengunjung dapat membaca berita dan
                           membeli konten premium atau langganan majalah. Admin mengelola dan mengkonfirmasi pembelian,
                           memantau aktivitas pengguna, dan memastikan operasional website. Jurnalis membuat, mengedit,
@@ -274,9 +297,11 @@
                       </div>
 
                       <div class="col-md-6 pt-4">
-                        <p class="mb-1 text-muted fw-semibold lh-lg">Sistem Informasi Organisasi Siswa Intra Sekolah (OSIS)
+                        <p class="mb-1 text-muted fw-semibold lh-lg">Sistem Informasi Organisasi Siswa Intra Sekolah
+                          (OSIS)
                         </p>
-                        <p class="mb-0 text-justify lh-lg text-capitalize">Sistem Informasi Organisasi Siswa Intra Sekolah (OSIS) di SMK 1 Kabupaten Majene adalah platform digital yang memungkinkan siswa, dan
+                        <p class="mb-0 text-justify lh-lg text-capitalize">Sistem Informasi Organisasi Siswa Intra
+                          Sekolah (OSIS) di SMK 1 Kabupaten Majene adalah platform digital yang memungkinkan siswa, dan
                           pengurus OSIS mengakses informasi terkait program kerja, jadwal kegiatan, dan
                           dokumentasi acara. Sistem ini meningkatkan koordinasi antaranggota, mendukung transparansi,
                           serta meningkatkan partisipasi siswa dalam kegiatan sekolah. Tujuan utama
@@ -304,7 +329,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-22.jpg">
-                      <img src="assets/images/gallery/card-picture-22.jpg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-22.jpg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -313,7 +338,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/b.webp">
-                      <img src="assets/images/b.webp" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/b.webp" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -322,7 +347,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-1.webp">
-                      <img src="assets/images/gallery/card-picture-1.webp" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-1.webp" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -331,7 +356,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-2.webp">
-                      <img src="assets/images/gallery/card-picture-2.webp" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-2.webp" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -340,7 +365,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-3.jpg">
-                      <img src="assets/images/gallery/card-picture-3.jpg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-3.jpg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -349,7 +374,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-4.jpg">
-                      <img src="assets/images/gallery/card-picture-4.jpg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-4.jpg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -358,7 +383,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-5.jpeg">
-                      <img src="assets/images/gallery/card-picture-5.jpeg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-5.jpeg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -367,7 +392,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-6.jpg">
-                      <img src="assets/images/gallery/card-picture-6.jpg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-6.jpg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -376,7 +401,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-7.webp">
-                      <img src="assets/images/gallery/card-picture-7.webp" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-7.webp" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -385,7 +410,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-8.jpg">
-                      <img src="assets/images/gallery/card-picture-8.jpg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-8.jpg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -394,7 +419,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-9.jpeg">
-                      <img src="assets/images/gallery/card-picture-9.jpeg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-9.jpeg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -403,7 +428,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-10.jpg">
-                      <img src="assets/images/gallery/card-picture-10.jpg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-10.jpg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -412,7 +437,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-11.jpg">
-                      <img src="assets/images/gallery/card-picture-11.jpg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-11.jpg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -421,7 +446,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-12.webp">
-                      <img src="assets/images/gallery/card-picture-12.webp" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-12.webp" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -430,7 +455,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-13.jpg">
-                      <img src="assets/images/gallery/card-picture-13.jpg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-13.jpg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -439,7 +464,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-14.jpg">
-                      <img src="assets/images/gallery/card-picture-14.jpg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-14.jpg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -448,7 +473,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-15.jpg">
-                      <img src="assets/images/gallery/card-picture-15.jpg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-15.jpg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -457,7 +482,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-16.jpg">
-                      <img src="assets/images/gallery/card-picture-16.jpg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-16.jpg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -466,7 +491,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-17.jpg">
-                      <img src="assets/images/gallery/card-picture-17.jpg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-17.jpg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -475,7 +500,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-18.jpg">
-                      <img src="assets/images/gallery/card-picture-18.jpg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-18.jpg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -484,7 +509,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-19.jpg">
-                      <img src="assets/images/gallery/card-picture-19.jpg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-19.jpg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -493,7 +518,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-20.jpeg">
-                      <img src="assets/images/gallery/card-picture-20.jpeg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-20.jpeg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -502,18 +527,18 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-21.jpg">
-                      <img src="assets/images/gallery/card-picture-21.jpg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-21.jpg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
                     </a>
                   </div>
 
-                  
+
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-23.jpg">
-                      <img src="assets/images/gallery/card-picture-23.jpg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-23.jpg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -522,7 +547,7 @@
 
                   <div class="col-md-6 col-xl-4">
                     <a class="img-post card" data-lightbox="assets/images/gallery/card-picture-24.jpg">
-                      <img src="assets/images/gallery/card-picture-24.jpg" alt="img" class="card-img custom-height"/>
+                      <img src="assets/images/gallery/card-picture-24.jpg" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
                       </div>
@@ -556,8 +581,8 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col my-1 wow fadeInUp" data-wow-delay="0.4s">
-          <p class="mb-0 text-center"> 
-            <a href="https://www.instagram.com/zlhm.a" class="text-dark" >Zulham Abidin</a>
+          <p class="mb-0 text-center">
+            <a href="https://www.instagram.com/zlhm.a" class="text-dark">Zulham Abidin</a>
           </p>
         </div>
         <div class="col-auto my-1">
