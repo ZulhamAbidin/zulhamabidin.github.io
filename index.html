@@ -9,14 +9,14 @@
   <link rel="icon" href="assets/images/logo.webp" type="image/x-icon">
   <link href="assets/css/plugins/animate.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="assets/fonts/inter/inter.css" id="main-font-link">
-  <link rel="stylesheet" href="assets/fonts/phosphor/duotone/style.css">
+  <!-- <link rel="stylesheet" href="assets/fonts/phosphor/duotone/style.css"> -->
   <link rel="stylesheet" href="assets/fonts/tabler-icons.min.css">
   <link rel="stylesheet" href="assets/fonts/feather.css">
   <link rel="stylesheet" href="assets/fonts/fontawesome.css">
   <link rel="stylesheet" href="assets/fonts/material.css">
   <link rel="stylesheet" href="assets/css/style.css" id="main-style-link">
   <link rel="stylesheet" href="assets/css/style-preset.css">
-  <script src="assets/js/tech-stack.js"></script>
+  <!-- <script src="assets/js/tech-stack.js"></script> -->
   <link rel="stylesheet" href="assets/css/landing.css">
 
   <style>
@@ -332,7 +332,7 @@
                   </div>
 
                   <div class="col-md-6 col-xl-4">
-                    <a class="img-post card" data-lightbox="assets/images/c.webp">
+                    <a class="img-post card" data-lightbox="assets/images/gallery/c.webp">
                       <img src="assets/images/gallery/c.webp" alt="img" class="card-img custom-height" />
                       <div class="card-img-overlay">
                         <i class="ti ti-eye"></i>
@@ -566,7 +566,7 @@
       <div class="modal-content">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="modal-body">
-          <img src="assets/images/user/avatar-5.jpg" alt="images" class="modal-image w-100 img-fluid" />
+          <img src="" alt="images" class="modal-image w-100 img-fluid" />
         </div>
       </div>
     </div>
@@ -593,22 +593,22 @@
     </div>
   </footer>
 
-  <script>
+  <!-- <script>
     $(document).ready(function () {
       $('.navbar-toggler').click(function () {
         $('#navbarNav').toggleClass('show');
       });
     });
-  </script>
+  </script> -->
 
-  <script src="../code.jquery.com/jquery-3.6.1.min.js"></script>
+  <!-- <script src="../code.jquery.com/jquery-3.6.1.min.js"></script> -->
   <script src="assets/js/plugins/popper.min.js"></script>
   <script src="assets/js/plugins/simplebar.min.js"></script>
   <script src="assets/js/plugins/bootstrap.min.js"></script>
-  <script src="assets/js/fonts/custom-font.js"></script>
-  <script src="assets/js/pcoded.js"></script>
-  <script src="assets/js/plugins/feather.min.js"></script>
-  <script>
+  <!-- <script src="assets/js/fonts/custom-font.js"></script> -->
+  <!-- <script src="assets/js/pcoded.js"></script> -->
+  <!-- <script src="assets/js/plugins/feather.min.js"></script> -->
+  <!-- <script>
     layout_change('light');
   </script>
   <script>
@@ -625,8 +625,8 @@
   </script>
   <script>
     preset_change('preset-1');
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
@@ -659,59 +659,7 @@
       }
     }
   </script>
-  <script>
-    let ost = 0;
-    document.addEventListener('scroll', function () {
-      let cOst = document.documentElement.scrollTop;
-      if (cOst == 0) {
-        document.querySelector('.navbar').classList.add('top-nav-collapse');
-      } else if (cOst > ost) {
-        document.querySelector('.navbar').classList.add('top-nav-collapse');
-        document.querySelector('.navbar').classList.remove('default');
-      } else {
-        document.querySelector('.navbar').classList.add('default');
-        document.querySelector('.navbar').classList.remove('top-nav-collapse');
-      }
-      ost = cOst;
-    });
-
-    var wow = new WOW({
-      animateClass: 'animated'
-    });
-    wow.init();
-
-    $('.screen-slide').owlCarousel({
-      loop: true,
-      margin: 30,
-      center: true,
-      nav: false,
-      dotsContainer: '.app_dotsContainer',
-      URLhashListener: true,
-      items: 1
-    });
-    $('.workspace-slider').owlCarousel({
-      loop: true,
-      margin: 30,
-      center: true,
-      nav: false,
-      dotsContainer: '.workspace-card-block',
-      URLhashListener: true,
-      items: 1.5
-    });
-    $('.marquee').marquee({
-      duration: 500000,
-      pauseOnHover: true,
-      startVisible: true,
-      duplicated: true
-    });
-    $('.marquee-1').marquee({
-      duration: 500000,
-      pauseOnHover: true,
-      startVisible: true,
-      duplicated: true,
-      direction: 'right'
-    });
-  </script>
+ 
 
 </body>
 
