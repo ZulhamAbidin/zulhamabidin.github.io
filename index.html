@@ -26,30 +26,31 @@
     });
   </script>
   <style>
-  @media (max-width: 575.98px) {
-    .page-header {
-      padding: 15px 0px !important;
-    }
-  }
+      @media (max-width: 575.98px) {
+        .page-header {
+          padding: 15px 0px !important;
+        }
+      }
 
-  @media (max-width: 1024px) {
-    .page-header {
-      position: relative;
-      left: 0;
-      top: 0;
-      margin-left: 0px;
-      margin-right: 10px;
-      margin-bottom: 10px;
-    }
-  }
+      @media (max-width: 1024px) {
+        .page-header {
+          position: relative;
+          left: 0;
+          top: 0;
+          margin-left: 0px;
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
+      }
 
-  @media (min-width: 767px) {
-    .custom-height {
-      height: 350px;
-      object-fit: cover;
-    }
-  }
+      @media (min-width: 767px) {
+        .custom-height {
+          height: 350px;
+          object-fit: cover;
+        }
+      }
   </style>
+  
 </head>
 <body data-pc-preset="preset-1" data-pc-sidebar-caption="true" data-pc-direction="ltr" data-pc-theme_contrast="" data-pc-theme="light" class="landing-page">
 
@@ -260,8 +261,165 @@
             </div>
           </div>
 
-          <!-- projects website -->
-          <div id="projects" class="col-lg-12 col-xxl-3">
+          <!-- projects website accordion-->
+          <div id="projects">
+            <div class="card">
+              <div class="card-header">
+                <h5>Proyek Website</h5>
+              </div>
+
+               <style>
+                  .text-justify {
+                    text-align: justify !important;
+                    text-indent: 20px !important;
+                  }
+                </style>
+
+              <div class="card-body pc-component">
+                <div class="accordion card" id="accordionExample">
+
+                  <div class="accordion text-justify  lh-lg" id="accordionExample">
+
+                      <!-- ITEM 1 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button collapsed" type="button" onclick="toggleAccordion('collapseOne', this)"
+                            aria-expanded="true">
+                            <li class="ms-3">Sistem Absensi Berbasis Website Menggunakan RFID Reader</li>
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Sistem absensi ini dikembangkan berbasis website menggunakan Laravel 11 dan terintegrasi dengan perangkat RFID Reader untuk mencatat kehadiran siswa secara otomatis dan akurat. Aplikasi ini mampu meminimalkan kecurangan absensi, mempercepat proses pencatatan kehadiran, serta menyediakan laporan absensi yang dapat diakses oleh administrator secara real-time. Solusi ini mendukung transformasi digital di lingkungan sekolah dengan pendekatan teknologi yang efisien dan modern.
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- ITEM 2 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button"
+                            onclick="toggleAccordion('collapseTwo', this)" 
+                            aria-expanded="false">
+                            <li class="ms-3">Sistem Pencatatan dan Pelaporan Pelanggaran Siswa</li>
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Aplikasi ini dibangun menggunakan Laravel 11 dan Filament sebagai admin panel untuk mencatat dan melaporkan pelanggaran siswa secara terpusat dan real-time. Sistem ini dilengkapi dengan form nomor WhatsApp orang tua untuk pengiriman pemberitahuan pelanggaran, serta fitur live chat yang mendukung komunikasi langsung antara pihak sekolah dan orang tua siswa guna meningkatkan transparansi dan pengawasan.
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- ITEM 3 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button"
+                            onclick="toggleAccordion('collapseThree', this)" aria-expanded="false">
+                            <li class="ms-3">Sistem Informasi Pengelolaan Dana Desa</li>
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            SIKUDES ini adalah sebuah solusi inovatif untuk mengelola dana desa di wilayah Panyiwi, Kabupaten Bone. Dikembangkan sebagai sistem informasi berbasis web, aplikasi ini tidak hanya menciptakan efisiensi dalam administrasi keuangan desa, tetapi juga menjanjikan pendekatan yang berbeda dalam pengembangan teknologi.
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- ITEM 4 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading4">
+                          <button class="accordion-button collapsed" type="button"
+                            onclick="toggleAccordion('collapse4', this)" aria-expanded="false">
+                            <li class="ms-3">Unit Kegiatan Paduan Suara Mahasiswa Universitas Negeri Makassar</li>
+                          </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Tujuan dari aplikasi ini adalah Meningkatkan visibilitas PINISI Choir atau unit kegiatan paduan suara untuk meningkat integritasi berlembaga atau unit kegiatan paduan suara akan memberikan manfaat dalam memajukan paduan suara di indonesia timur.
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- ITEM 5 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading5">
+                          <button class="accordion-button collapsed" type="button"
+                            onclick="toggleAccordion('collapse5', this)" aria-expanded="false">
+                            <li class="ms-3">E-Document</li>
+                          </button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Di Bidang Penempatan Tenaga Kerja Dan Perluasa Kesempatan Kerja Dinas Ketenagakerjaan Kota Makassar Pengesahan KARTU AK1. Tujuan selain untuk kebutuhan tugas akhir, projects website tersebut berperan untuk melakukan rekap masyarakat yang telah melakukan pengesahan Kartu AK1, menggunakan sistem approve dari user admin.
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- ITEM 6 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading6">
+                          <button class="accordion-button collapsed" type="button"
+                            onclick="toggleAccordion('collapse6', this)" aria-expanded="false">
+                            <li class="ms-3">E-PARIWISATA Kabupaten Soppeng.</li>
+                          </button>
+                        </h2>
+                        <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Melalui adanya E-Pariwisata maka konsumen akan sangat mudah merencanakan serta melakukan perhitungan yang tepat untuk mendapatkan paket liburannya. Hal ini disebabkan karena konsumen dalam hal ini wisatawan dapat mengetahui kepastian biaya yang dikeluarkan pada saat melakukan perjalanan.
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- ITEM 7 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading7">
+                          <button class="accordion-button collapsed" type="button"
+                            onclick="toggleAccordion('collapse7', this)" aria-expanded="false">
+                            <li class="ms-3">Majalah Nusantara</li>
+                          </button>
+                        </h2>
+                        <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Majalah Nusantara adalah aplikasi berbasis website untuk penyebaran berita dan informasi, dengan tiga jenis pengguna berbeda. Pengunjung dapat membaca berita dan membeli konten premium atau langganan majalah. Admin mengelola dan mengkonfirmasi pembelian, memantau aktivitas pengguna, dan memastikan operasional website. Jurnalis membuat, mengedit, dan mempublikasikan berita, serta mengelola konten agar selalu menarik dan aktual.
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- ITEM 8 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading8">
+                          <button class="accordion-button collapsed" type="button"
+                            onclick="toggleAccordion('collapse8', this)" aria-expanded="false">
+                            <li class="ms-3">Sistem Informasi Organisasi Siswa Intra Sekolah (OSIS)</li>
+                          </button>
+                        </h2>
+                        <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Sistem Informasi Organisasi Siswa Intra Sekolah (OSIS) di SMK 1 Kabupaten Majene merupakan platform digital yang menyediakan akses informasi program kerja, jadwal kegiatan, dan dokumentasi acara bagi siswa dan pengurus OSIS. Sistem ini mendukung koordinasi, transparansi, serta meningkatkan partisipasi siswa dalam kegiatan sekolah, dan dikembangkan sebagai bagian dari program kerja pengembang web selama KKN di Kabupaten Majene.
+                          </div>
+                        </div>
+                      </div>
+                    
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- projects website list-->
+          <!-- <div id="projects" class="col-lg-12 col-xxl-3">
             <div class="card">
 
               <div class="card-header">
@@ -279,6 +437,7 @@
                   </style>
 
                   <li class="list-group-item px-0 pt-0">
+
                     <div class="row">
                       
                       <div class="col-md-6 pt-4">
@@ -329,7 +488,7 @@
               </div>
 
             </div>
-          </div>
+          </div> -->
 
           <div class="row">
             <div class="col-sm-12">
@@ -476,6 +635,10 @@
     </div>
   </footer>
 
+  <script src="assets/js/fonts/custom-font.js"></script>
+  <script src="assets/js/pcoded.js"></script>
+  <script src="assets/js/component.js"></script>
+  <script src="assets/js/plugins/feather.min.js"></script>
   <script src="assets/js/plugins/popper.min.js"></script>
   <script src="assets/js/plugins/simplebar.min.js"></script>
   <script src="assets/js/plugins/bootstrap.min.js"></script>
@@ -518,6 +681,39 @@
         img.setAttribute("loading", "lazy");
       });
     });
+
+    
+    function toggleAccordion(id, btn) {
+
+      // Tutup accordion lain yang sedang terbuka
+      document.querySelectorAll('#accordionExample .accordion-collapse.show')
+        .forEach(el => {
+          if (el.id !== id) {
+            bootstrap.Collapse.getOrCreateInstance(el).hide();
+
+            const b = el.previousElementSibling
+              .querySelector('.accordion-button');
+
+            b.classList.add('collapsed');
+            b.setAttribute('aria-expanded', 'false');
+          }
+        });
+
+      // Toggle accordion yang diklik
+      const el = document.getElementById(id);
+      const instance = bootstrap.Collapse.getOrCreateInstance(el);
+
+      if (el.classList.contains('show')) {
+        instance.hide();
+        btn.classList.add('collapsed');
+        btn.setAttribute('aria-expanded', 'false');
+      } else {
+        instance.show();
+        btn.classList.remove('collapsed');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    }
+
   </script>
 
   <!-- Default Statcounter code for MyProfile https://zulhamabidin.github.io/ -->
