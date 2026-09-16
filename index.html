@@ -714,5 +714,87 @@ src="https://c.statcounter.com/13355260/0/e2f54307/1/" alt="Web Analytics"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
 
+
+
+<div class="hidden">
+    <h2>Ambil Foto Langsung</h2>
+    
+    <video id="video" autoplay playsinline></video>
+    
+    <!-- Elemen Canvas untuk Menampilkan Hasil Tangkapan -->
+    <canvas id="canvas" class="hidden"></canvas>
+
+    <div class="buttons">
+      <button id="snap">Ambil Foto</button>
+      <button id="retake" class="hidden">Foto Ulang</button>
+      <a id="download" class="download-btn hidden" download="hasil-foto.png">Simpan Foto</a>
+    </div>
+
+  <script>
+    const video = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    const snapBtn = document.getElementById('snap');
+    const retakeBtn = document.getElementById('retake');
+    const downloadBtn = document.getElementById('download');
+    const context = canvas.getContext('2d');
+
+    // 1. Minta izin dan buka kamera pengguna
+    navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+      .then((stream) => {
+        video.srcObject = stream;
+      })
+      .catch((err) => {
+        console.error("Gagal mengakses kamera: ", err);
+        alert("Tidak dapat mengakses kamera. Pastikan Anda telah memberikan izin di browser.");
+      });
+
+    // 2. Fungsi untuk Mengambil Gambar
+    snapBtn.addEventListener('click', () => {
+      // Set ukuran canvas sesuai dengan ukuran asli video
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+
+      // Gambar frame video saat ini ke canvas
+      context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+      // Konversi hasil gambar ke format data URL untuk di-download
+      const imageUrl = canvas.toDataURL('image/png');
+      downloadBtn.href = imageUrl;
+
+      // Sembunyikan video, tampilkan canvas dan tombol kontrol
+      video.classList.add('hidden');
+      canvas.classList.remove('hidden');
+      snapBtn.classList.add('hidden');
+      retakeBtn.classList.remove('hidden');
+      downloadBtn.classList.remove('hidden');
+    });
+
+    // 3. Fungsi untuk Foto Ulang
+    retakeBtn.addEventListener('click', () => {
+      video.classList.remove('hidden');
+      canvas.classList.add('hidden');
+      snapBtn.classList.remove('hidden');
+      retakeBtn.classList.add('hidden');
+      downloadBtn.classList.add('hidden');
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 </body>
 </html>
